@@ -1,36 +1,74 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <title>My Portfolio</title>
-</head>
-  <body>
+  
+    <meta charset="UTF-8">
+    <title>Background change with JS</title>
     
+    
+    
+    
+        <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      html, body { height: 100% }
 
-    <img src="http://placekitten.com/900/300" alt="A cat">
+body {
+  margin: 0 auto;
+  background: grey;
+  text-align: center;
+  background-image: url("http://25.media.tumblr.com/211b5f4f19038a3940a16c7bcd7c84de/tumblr_mq7at6uz641st5lhmo1_1280.jpg");
+  background-size: cover;
+  background-position: center center;
+}
 
-    <h1>Welcome to my Portfolio</h1>
+input[type="file"] {
+  display: none
+}
 
-   
-<
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Hank Quinlan!</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-			</ul>
-		</footer>
-	</body>
+button {
+  color: rgba(255, 255, 255, 0.85);
+  margin: 50px;
+  font-family: calibri light;
+  letter-spacing: 2px;
+  font-size: 25px;
+  background: #333;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 25px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #444;
+}
+
+button:active {
+  background: #111;
+}
+
+button:focus {
+  outline: none;
+}
+    </style>
+
+    
+        <script src="js/prefixfree.min.js"></script>
+
+    
+  </head>
+
+  <body>
+
+    <input id="background_input" type="file"/>
+<button id="upload_button">Upload background<br/>or use drag and drop</button>
+    
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
 </html>
+
+
+	
